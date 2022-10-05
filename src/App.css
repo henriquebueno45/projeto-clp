@@ -2,9 +2,19 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.linhaHorizontal {
   pointer-events: none;
+  position: absolute;
+  object-fit: fill;
+}
+
+.linhaVertical {
+  pointer-events: none;
+  transform: rotate(90deg);
+  position: absolute;
+  transform: translateX(190);
+  object-fit: fill;
+  object-position: bottom;
 }
 
 
@@ -23,8 +33,9 @@
   color: #61dafb;
 }
 
-.chaveamento{
+.items{
   position: absolute;
+  /* props: pinos; */
   cursor: move;
   color: white;
   max-width: 700px;
@@ -32,24 +43,4 @@
   padding: 1em;
   margin: auto;
   user-select: none;
-}
-
-.bobina{
-  position: absolute;
-  cursor: move;
-  color: white;
-  max-width: 700px;
-  border-radius: 5px;
-  padding: 1em;
-  margin: auto;
-  user-select: none;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
